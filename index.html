@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery frist assignment</title>
+		<link rel="stylesheet" type="text/css"
+	          href="https://fonts.googleapis.com/css?family=Tangerine">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<section id="first-section">
+			<div class="container">
+
+<!---*********   body background color change  *********-->
+
+		<select name="background_color" id="bgcolor">
+			<option value="white">Change For Bg-color Click Here</option>
+			<option value="white">white</option>
+			<option value="orange">orange</option>
+			<option value="orangered">orangered</option>
+			<option value="#e6e6e6">#e6e6e6</option>
+			<option value="green">green</option>
+			<option value="#262B30">#262B30</option>
+		</select>
+				<div class="row">
+					<div class="col-sm-6 col-xsm-6">
+						<button type="button" class="btn btn-danger">CLICK FOR FADEOUT & FADEIN</button>
+						<p id="stdn" class="coder">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.</p>
+						
+					</div>
+					
+					<div class="col-sm-6 col-xsm-6">
+						<ul class="list-unstyled Liststyle">
+							<li>1. Without class from html , but addclass from jquery.</li>
+							<li>2. Without class from html , but addclass from jquery.</li>
+							<li>3. Without class from html , but addclass from jquery.</li>
+							<li>4. Without class from html , but addclass from jquery.</li>
+							<li>5. Without class from html , but addclass from jquery.</li>
+							<li>6. Without class from html , but addclass from jquery.</li>
+							<li>7. Without class from html , but addclass from jquery.</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+<!--********   first-section end   *********-->
+
+	
+<!--**********   second-section start  **********-->
+
+		<section id="second-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xsm-6">
+						<textarea rows="10" class="form-control"></textarea>
+						<span class="uncommon"></span>
+					</div>
+
+		<!--********* form effect   *********-->
+
+					<div class="col-sm-6 col-xsm-6">
+						<form>
+							<div class="form-group">
+								<input type="text" name="fname" placeholder="Full name" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="mail" name="mail" placeholder="Email" class="email form-control">
+								<span class="emil"></span>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Password"  class="form-control">
+								<span class="paswrd"></span>
+							</div>
+							<div class="form-group">
+								<input type="submit" name="submit" value="Log in" class="btn btn-danger">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+<!--**********   third-section start  **********-->
+
+		<section id="third-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ol class="list-unstyled">
+							<li class="btn btn-danger all">All</li>
+							<li class="btn btn-danger htmlcss">html & css</li>
+							<li class="btn btn-danger psd">psd to html</li>
+							<li class="btn btn-danger wp">wordpress</li>
+						</ol>
+					</div>
+
+					<div class="col-sm-3 col-xsm-6 htmlcss">
+						<img src="assets/images/img1.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 psd">
+						<img src="assets/images/img2.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 htmlcss">
+						<img src="assets/images/img4.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 htmlcss">
+						<img src="assets/images/img2.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 wp">
+						<img src="assets/images/img3.png" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 wp">
+						<img src="assets/images/img4.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 psd">
+						<img src="assets/images/img1.jpg" class="img-responsive">
+					</div>
+					<div class="col-sm-3 col-xsm-6 wp">
+						<img src="assets/images/img3.png" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+
+<!-- script for first-section -->
+
+		<script>
+			
+			$(document).ready(function(){
+
+				$("button.btn").click(function(){
+
+					$("p").fadeToggle(1000);
+				});
+			});
+
+
+/********** mouseenter effect *************/
+
+			$(document).ready(function(){
+
+				$("button").mouseenter(function(){
+					$("p").css("color","red");
+				});
+			});
+
+
+/********** mouseleave effect ***********/
+
+			$(document).ready(function(){
+
+				$("button").mouseleave(function(){
+					$("p").css("color","#0861BB");
+				});
+			});
+
+
+/********** Addclass effect ***********/
+
+			$(document).ready(function(){
+
+				$("ul li:first-child").addClass("first");
+				$("ul li:last-child").addClass("last");
+				$("ul li:even").addClass("even");
+				$("ul li:odd").addClass("odd");
+			});
+
+
+/***********   script for second-section  **********/
+
+/**********  script for textarea  **********/
+
+			$(document).ready(function(){
+
+				var i=10;
+
+				var pbls=" charecters, You have remaining.";
+
+				$(".uncommon").text(10+pbls);
+
+				$("textarea").keyup(function(){
+
+					var Txt=$("textarea").val();
+					var Lngth=i-Txt.length;
+					$(".uncommon").text(Lngth+pbls);
+
+					if(Lngth<=0){
+
+					$(".uncommon").css("background","red");
+					$(".uncommon").css("color","#fff");
+					$("textarea").attr("readonly","true");
+					}
+				});	
+
+			});
+
+
+/**********  form effect ************/
+
+			$(document).ready(function(){
+
+				$("input:password").keyup(
+					function(){
+						var pw=$("input:password").val().length;
+						if(pw<=2){
+							$(".paswrd").html("<b>Weak</b>");
+							$(".paswrd").css("color","red");
+
+						}else if(pw<=4){
+							$(".paswrd").html("<b>Medium</b>");
+							$(".paswrd").css("color","orange");
+
+						}else{
+							$(".paswrd").html("<b>Strong</b>");
+							$(".paswrd").css("color","green");
+						}
+					});
+			});
+
+/********** input email *********/
+
+			$(document).ready(function(){
+
+				$("input.email").keyup(function(){
+					var ml=$("input.email").val(); 
+					var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+					if(!email_regex.test(ml)){
+						$("span.emil").text("Type your correct mail id");
+					}else{
+						$("span.emil").text("You have entire perfect mail id");
+
+					}
+				})
+			})
+
+/***********   script for third-section  **********/
+
+			$(document).ready(function(){
+
+				$("ol li.all").click(function(){
+					$("div.htmlcss").fadeIn(1000);
+					$("div.wp").fadeIn(1000);
+					$("div.psd").fadeIn(1000);
+				});
+				$("ol li.htmlcss").click(function(){
+					$("div.htmlcss").fadeIn(1000);
+					$("div.wp").fadeOut(1000);
+					$("div.psd").fadeOut(1000);
+
+				});
+				$("ol li.psd").click(function(){
+					$("div.htmlcss").fadeOut(1000);
+					$("div.wp").fadeOut(1000);
+					$("div.psd").fadeIn(1000);
+
+				});
+				$("ol li.wp").click(function(){
+					$("div.htmlcss").fadeOut(1000);
+					$("div.wp").fadeIn(1000);
+					$("div.psd").fadeOut(1000);
+
+				});
+			});
+
+
+/********** fourth-section start **********/
+
+			$(document).ready(function(){
+				var color=$("#bgcolor").val();
+
+				$("body").css("background",color);
+
+				$("#bgcolor").change(function(){
+					color=$("#bgcolor").val();
+
+					$("body").css("background",color);
+				});
+			});
+
+		</script>
+
+	</body>
+</html>

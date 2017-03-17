@@ -1,0 +1,122 @@
+
+select{
+
+	padding:8px 10px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+	background: #ddd;
+	border:1px solid #ddd;
+	color: #343333;
+	border-radius: 5px;
+}
+
+#first-section{
+
+	margin:50px 0;
+}
+
+.coder{
+
+	font-size: 15px;
+}
+
+.Liststyle{
+
+	font-size: 15px;
+	font-weight: 500;
+	color: #0863BF;
+	text-transform: capitalize;
+
+}
+
+
+li{
+	margin-bottom: 2px;
+}
+
+.first{
+
+	background: seagreen !important;
+	padding: 8px;
+	color: #fff;
+}
+
+.even{
+
+	background: red;
+	padding: 8px;
+}
+
+.odd{
+
+	background: orange;
+	padding: 8px;
+}
+
+.last{
+
+	background: yellow;
+	padding: 8px;
+}
+	
+	/*  first-section end  */
+
+
+#second-section{
+
+	margin:50px 0;
+}	
+
+.form-control{
+
+	margin-bottom: 7px;
+}
+
+.btn{
+
+	text-transform: uppercase;
+}
+
+.uncommon{
+
+	padding: 8px;
+	font-size: 16px;
+	text-transform: capitalize;
+	border-radius: 5px;
+}
+
+
+		/*  second-section end  */
+
+
+		/*  third-section start  */
+#third-section{
+
+	margin-bottom: 40px;
+}
+
+.img-responsive{
+
+	margin-bottom: 15px;
+}
+
+@media(max-width:499px){
+	.Liststyle{
+		margin-top:20px;
+	}
+	form{
+
+		margin-top: 30px;
+	}
+	img{
+
+		width: 100%;
+	}
+}
+
+@media(max-width: 460px){
+	.btn{
+
+		margin-bottom: 5px;
+	}
+}
